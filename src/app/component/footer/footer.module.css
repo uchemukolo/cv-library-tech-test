@@ -1,0 +1,98 @@
+.footer {
+  margin: 0 auto;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.tabButton {
+  padding: 10px 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s ease;
+  width: 400px !important;
+  height: 46px;
+  background-color: #4488D5;
+  border-left: 1px solid #4488D5;
+  border-top: 1px solid #4488D5;
+  border-right: 1px solid #4488D5;
+  color: #ffffff;
+}
+
+.tabButton:hover {
+  background-color: #003777;
+}
+
+.activeTab {
+  background-color: #003777;
+}
+
+.tabContent {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  color: #ffffff;
+  background-color: #003777;
+  padding: 20px 0;
+}
+
+.tabPane {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.listContainer {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  text-align: left;
+  width: 300px;
+}
+
+.list {
+  list-style: none;
+  padding: 0px 40px 0 0;
+  margin: 0;
+  height: 160px;
+  width: 200px;
+}
+
+.list li {
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.line {
+  height: 1px;
+  width: 80%;
+  background-color: #4488D5;
+  margin-top: 46px;
+}
+
+@media (max-width: 600px) {
+  .line {
+    display: none;
+  }
+
+  .tabButton {
+    padding: 10px 2px;
+    font-size: 14px;
+  }
+
+  .tabContent {
+    font-size: 14px;
+  }
+
+  .listContainer {
+    gap: 20px;
+  }
+}
